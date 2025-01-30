@@ -33,6 +33,27 @@
         h1, h2 {
             color: #333;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -86,6 +107,25 @@
         <h2>Entrepreneurial Experience</h2>
         <p>At age 12, I built my first website using Shopify, where I learned about online business, marketing, and e-commerce.</p>
         <p>Even though it wasn't profitable, the experience taught me valuable lessons about persistence and problem-solving.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or just want to connect, feel free to reach out to me via email or the contact form below:</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Or email me directly at: <a href="mailto:tobias@email.com">tobias@email.com</a></p>
     </section>
 
     <!-- Footer Section -->
