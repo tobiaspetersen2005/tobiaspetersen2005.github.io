@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Text & Border Button</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .gradient-button {
+            font-size: 14px; /* Slightly smaller text */
+            font-weight: bold;
+            width: 120px; /* Fixed width */
+            height: 50px; /* Fixed height */
+            line-height: 50px; /* Centers text vertically */
+            text-align: center; /* Centers text horizontally */
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            background: transparent;
+            border: none;
+            font-family: "Poppins", sans-serif;
+            
+            /* Gradient Text */
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-button::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            border-radius: 6px; /* Slightly rounded corners */
+            padding: 3px;
+            z-index: -1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .gradient-button::after {
+            content: "";
+            position: absolute;
+            top: 3px; left: 3px; right: 3px; bottom: 3px;
+            background: white;
+            border-radius: 4px; /* Matches outer rounding */
+            z-index: -1;
+        }
+
+        .gradient-button:hover {
+            -webkit-text-fill-color: white; /* Changes text color on hover */
+        }
+
+        .gradient-button:hover::after {
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="#" class="gradient-button">Download</a>
+
+</body>
+</html>
