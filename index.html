@@ -3,70 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Text & Border Button</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Tobias' Personal Website</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
-            font-family: "Poppins", sans-serif;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-
-        .gradient-button {
-            font-size: 18px;
-            font-weight: bold;
-            padding: 12px 24px;
-            text-transform: uppercase;
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        a {
+            color: #333;
             text-decoration: none;
-            display: inline-block;
-            cursor: pointer;
-            position: relative;
-            background: transparent;
-            border: none;
-            font-family: "Poppins", sans-serif;
-            
-            /* Gradient Text */
-            background: linear-gradient(45deg, #ff7e5f, #feb47b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
-
-        .gradient-button::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(45deg, #ff7e5f, #feb47b);
-            border-radius: 8px; /* Slightly rounded corners */
-            padding: 3px;
-            z-index: -1;
-            transition: all 0.3s ease-in-out;
+        a:hover {
+            text-decoration: underline;
         }
-
-        .gradient-button::after {
-            content: "";
-            position: absolute;
-            top: 3px; left: 3px; right: 3px; bottom: 3px;
-            background: white;
-            border-radius: 6px; /* Matches outer rounding */
-            z-index: -1;
+        h1, h2 {
+            color: #333;
         }
-
-        .gradient-button:hover {
-            -webkit-text-fill-color: white; /* Changes text color on hover */
-        }
-
-        .gradient-button:hover::after {
-            background: linear-gradient(45deg, #ff7e5f, #feb47b);
-        }
-
     </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <h1>Tobias' Personal Website</h1>
+        <p>Welcome! This is a brief overview of who I am, my work, and my entrepreneurial journey.</p>
+    </header>
 
-    <a href="#" class="gradient-button">Download Report</a>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Tobias, a 19-year-old student at the University of Copenhagen with a passion for startups and technology.</p>
+        <p>I'm interested in building innovative solutions and tackling problems with a creative approach.</p>
+    </section>
 
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Here is a brief overview of my skills and education:</p>
+        <ul>
+            <li><strong>Education:</strong> University of Copenhagen (Studying Economics)</li>
+            <li><strong>Skills:</strong> HTML, CSS, JavaScript, Entrepreneurship, Real Estate Analysis</li>
+            <li><strong>Languages:</strong> Danish, English</li>
+        </ul>
+        <p>You can download my full <a href="resume.pdf" target="_blank">Resume (PDF)</a>.</p>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <p>Although I'm still early in my career, I have worked on several projects, including:</p>
+        <ul>
+            <li><strong>Entrepreneurial Experience:</strong> Built my first website at 12 using Shopify.</li>
+            <li><strong>Reports:</strong> Analyzed real estate investments and business optimization strategies in school reports.</li>
+        </ul>
+    </section>
+
+    <!-- Links to Social Profiles Section -->
+    <section id="links">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://www.goodreads.com/user/show/YOUR-USER-ID" target="_blank">My Goodreads Profile</a></li>
+            <li><a href="https://www.imdb.com/name/YOUR-ID" target="_blank">My IMDb Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <!-- Entrepreneurial Experience Section -->
+    <section id="entrepreneurship">
+        <h2>Entrepreneurial Experience</h2>
+        <p>At age 12, I built my first website using Shopify, where I learned about online business, marketing, and e-commerce.</p>
+        <p>Even though it wasn't profitable, the experience taught me valuable lessons about persistence and problem-solving.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Tobias. All rights reserved.</p>
+    </footer>
 </body>
 </html>
