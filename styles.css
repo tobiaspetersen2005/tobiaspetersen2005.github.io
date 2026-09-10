@@ -1,11 +1,11 @@
 /* ==========================================================================
    Tobias Petersen — Personal Website Styles
    Editorial / Minimalist Aesthetic System
-   Strictly no gradients, no purple hues, no heavy card grids.
+   Clean, authentic, human, non-corporate typography layout.
    ========================================================================== */
 
 :root {
-  /* Color Palette — Light Mode (Warm, clean editorial paper theme) */
+  /* Color Palette — Light Mode (Warm, clean paper theme) */
   --bg-primary: #FAF9F6;
   --bg-surface: #FFFFFF;
   --bg-hover: #F0EEEA;
@@ -121,11 +121,11 @@ a {
 
 .site-nav {
   display: flex;
-  gap: 24px;
+  gap: 20px;
 }
 
 .site-nav a {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-secondary);
 }
@@ -219,28 +219,8 @@ a {
   padding: 80px 0 60px 0;
 }
 
-.status-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  background-color: var(--accent-bg);
-  padding: 4px 10px;
-  border-radius: var(--radius-sm);
-  margin-bottom: 24px;
-}
-
-.status-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #10B981;
-}
-
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   font-weight: 500;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
@@ -323,7 +303,7 @@ a {
 }
 
 .about-text .lead {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--text-primary);
   font-weight: 400;
   margin-bottom: 16px;
@@ -530,6 +510,44 @@ a {
   font-size: 0.95rem;
 }
 
+/* Fitness & Podcasts Section */
+.interests-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.interest-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 28px;
+  border-radius: var(--radius-sm);
+}
+
+.interest-title {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.interest-desc {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.podcasts-list {
+  list-style: disc inside;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.podcasts-list li .sub-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 /* Documents Grid */
 .documents-grid {
   display: flex;
@@ -726,7 +744,7 @@ a {
     font-size: 2.5rem;
   }
   
-  .about-grid {
+  .about-grid, .interests-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
@@ -737,7 +755,7 @@ a {
   }
 
   .site-nav {
-    display: none; /* Mobile nav menu can be toggled if needed */
+    display: none;
   }
 
   .document-item {
