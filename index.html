@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tobias Petersen</title>
-  <meta name="description" content="Personal website of Tobias Petersen. Building projects, working out, studying, and trying to stay curious.">
+  <meta name="description" content="Personal website of Tobias Petersen. Building apps, working out, studying, and exploring ideas.">
   
   <!-- Google Fonts: Inter for UI/Body, Newsreader for editorial titles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,18 +18,10 @@
   <!-- Navigation Bar -->
   <header class="site-header">
     <div class="container header-container">
-      <a href="#hero" class="site-logo">Tobias Petersen</a>
+      <a href="index.html" class="site-logo">Tobias Petersen</a>
       
-      <nav class="site-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Entrepreneurship &amp; Projects</a>
-        <a href="#experience">Work</a>
-        <a href="#education">Education</a>
-        <a href="#interests">Fitness &amp; Podcasts</a>
-        <a href="#documents">Documents</a>
-      </nav>
-
       <div class="header-actions">
+        <a href="blog.html" class="nav-blog-link">Blog</a>
         <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle theme">
           <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
           <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
@@ -39,6 +31,19 @@
     </div>
   </header>
 
+  <!-- Right Side Minimalist Scrollspy -->
+  <aside class="scrollspy" aria-label="Page navigation">
+    <ul class="scrollspy-list">
+      <li><a href="#hero" class="scrollspy-item active" data-section="hero"><span class="scrollspy-label">Hero</span></a></li>
+      <li><a href="#about" class="scrollspy-item" data-section="about"><span class="scrollspy-label">About</span></a></li>
+      <li><a href="#projects" class="scrollspy-item" data-section="projects"><span class="scrollspy-label">Projects</span></a></li>
+      <li><a href="#experience" class="scrollspy-item" data-section="experience"><span class="scrollspy-label">Work</span></a></li>
+      <li><a href="#education" class="scrollspy-item" data-section="education"><span class="scrollspy-label">Education</span></a></li>
+      <li><a href="#documents" class="scrollspy-item" data-section="documents"><span class="scrollspy-label">Documents</span></a></li>
+      <li><a href="#goodreads" class="scrollspy-item" data-section="goodreads"><span class="scrollspy-label">Goodreads</span></a></li>
+    </ul>
+  </aside>
+
   <main>
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
@@ -46,8 +51,7 @@
         <div class="hero-content">
           <h1 class="hero-title">Hey, I'm Tobias.</h1>
           <p class="hero-subtitle">
-            I build things, experiment with ideas, love entrepreneurship, and train for half ironmans. 
-            Currently studying Actuarial Mathematics at the University of Copenhagen and testing pension SaaS software at Keylane.
+            I build things, experiment with ideas, work out. Currently studying Actuarial Mathematics at the University of Copenhagen and testing pension SaaS software at Keylane.
           </p>
 
           <div class="hero-links">
@@ -82,101 +86,126 @@
       <div class="container">
         <div class="section-header">
           <span class="section-label">01 / Story</span>
-          <h2 class="section-title">A Bit About Me</h2>
+          <h2 class="section-title">About Me</h2>
         </div>
         <div class="about-grid">
           <div class="about-text">
             <p class="lead">
-              I’m 20, based in Copenhagen, and obsessed with building things.
+              I’m 21 years old, living in Copenhagen.
             </p>
             <p>
-              I got my first taste of entrepreneurship back when I was 12 years old—setting up my first online store and making my first sales. Ever since then, tinkering with business ideas, side projects, and digital products has been what gets me excited.
+              In my free time, I enjoy reading, watching movies, building apps and websites, hanging out with friends, and going to concerts and events. I’m also big on fitness—doing strength training and calisthenics while preparing for a Half Ironman.
             </p>
             <p>
-              Right now, I’m studying Actuarial Mathematics at the University of Copenhagen and working part-time at Keylane, testing pension SaaS solutions. When I’m not coding or studying, you’ll usually find me working out (heavy lifting and calisthenics) or out training for a Half Ironman.
+              I’m currently studying Actuarial Mathematics at the University of Copenhagen and working part-time at Keylane testing pension SaaS solutions.
             </p>
+
+            <div class="podcasts-subblock">
+              <h4 class="podcasts-heading">Podcasts I Listen To:</h4>
+              <ul class="podcasts-inline-list">
+                <li><strong>My First Million</strong> <em>(listen religiously!)</em></li>
+                <li><strong>Starter Story</strong></li>
+                <li><strong>The Prof G Pod</strong></li>
+                <li><strong>TBPN</strong></li>
+                <li><strong>Langt fra løgnen</strong></li>
+              </ul>
+            </div>
           </div>
+
           <div class="about-highlights">
             <div class="highlight-item">
-              <span class="highlight-label">Current Main Focus</span>
-              <span class="highlight-value">Building projects &amp; studying @ UCPH</span>
+              <span class="highlight-label">Age &amp; Location</span>
+              <span class="highlight-value">21 · Copenhagen, Denmark</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Education</span>
+              <span class="highlight-value">Actuarial Math @ UCPH</span>
             </div>
             <div class="highlight-item">
               <span class="highlight-label">Part-time Job</span>
-              <span class="highlight-value">Testing pension SaaS @ Keylane</span>
+              <span class="highlight-value">Testing Pension SaaS @ Keylane</span>
             </div>
             <div class="highlight-item">
-              <span class="highlight-label">Athletics</span>
-              <span class="highlight-value">Calisthenics &amp; Half Ironman Prep</span>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-label">Location</span>
-              <span class="highlight-value">Copenhagen, Denmark</span>
+              <span class="highlight-label">Hobbies</span>
+              <span class="highlight-value">Calisthenics, Concerts, Coding</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Entrepreneurship & Projects Section -->
+    <!-- Projects Section -->
     <section id="projects" class="section border-top">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">02 / Building Things</span>
-          <h2 class="section-title">Entrepreneurship &amp; Projects</h2>
-          <p class="section-subtitle">I love building way more than pure math. Here's a glimpse of what I’ve built over the years.</p>
+          <span class="section-label">02 / Portfolio</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Apps, tools, and side projects I've built.</p>
         </div>
 
         <div class="projects-list">
 
           <article class="project-row">
             <div class="project-meta">
-              <span class="project-tag">Dating Startup</span>
+              <span class="project-tag">Dating App</span>
               <span class="project-year">Friday Flings</span>
             </div>
             <div class="project-body">
               <h3 class="project-title">Friday Flings — Digital Dating Service</h3>
               <p class="project-desc">
-                My last major endeavor: a digital dating service built specifically for established couples. Every week, couples received a fun digital date experience—like a virtual murder mystery night or an interactive online game.
+                A digital dating service for established couples. Every week, couples received a fun digital date experience—such as a virtual murder mystery or an online game.
               </p>
             </div>
           </article>
 
           <article class="project-row">
             <div class="project-meta">
-              <span class="project-tag">FinTech / Personal</span>
+              <span class="project-tag">FinTech</span>
               <span class="project-year">Finance App</span>
             </div>
             <div class="project-body">
               <h3 class="project-title">Personal Finance &amp; Net Worth Tracker</h3>
               <p class="project-desc">
-                Built an automated personal finance management app that integrated directly with my personal bank accounts and stock broker to track cash flow, portfolio allocation, and net worth in real-time.
+                Automated personal finance management application integrated directly with personal bank accounts and stock broker for real-time net worth and portfolio tracking.
               </p>
             </div>
           </article>
 
           <article class="project-row">
             <div class="project-meta">
-              <span class="project-tag">Probabilistic Tool</span>
-              <span class="project-year">Blackjack Simulator</span>
+              <span class="project-tag">Card Strategy</span>
+              <span class="project-year">Blackjack Tool</span>
             </div>
             <div class="project-body">
-              <h3 class="project-title">Blackjack Trainer &amp; Monte Carlo Simulator</h3>
+              <h3 class="project-title">Blackjack Basic Strategy &amp; Card Counter App</h3>
               <p class="project-desc">
-                Created interactive blackjack basic strategy trainers along with a Monte Carlo simulation engine to simulate millions of hands, analyzing expected values and bankroll volatility under different rule variations.
+                An interactive training tool designed to practice optimal basic strategy tables and master card counting systems under real-time game conditions.
               </p>
             </div>
           </article>
 
           <article class="project-row">
             <div class="project-meta">
-              <span class="project-tag">Language Tool</span>
+              <span class="project-tag">Simulation</span>
+              <span class="project-year">Monte Carlo Engine</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Blackjack Monte Carlo Simulator</h3>
+              <p class="project-desc">
+                A statistical simulation engine built to run millions of blackjack hands, analyzing win probabilities, house edge variations, and bankroll volatility.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-meta">
+              <span class="project-tag">Language App</span>
               <span class="project-year">German Learning</span>
             </div>
             <div class="project-body">
               <h3 class="project-title">German Language Learning App</h3>
               <p class="project-desc">
-                A custom app I built to help improve my conversational German (whether my German is actually improving is still debatable, but building it was super fun!).
+                Custom web app built to practice and improve German vocabulary and conversational grammar (debatable if my German is actually working...).
               </p>
             </div>
           </article>
@@ -187,9 +216,9 @@
               <span class="project-year">Age 12+</span>
             </div>
             <div class="project-body">
-              <h3 class="project-title">E-Commerce Webstores &amp; Online Marketplaces</h3>
+              <h3 class="project-title">Webstores &amp; Online Marketplaces</h3>
               <p class="project-desc">
-                Built my very first online store when I was 12 years old, shipping products and landing my first sales online. Later went on to build digital marketplaces and various experimental web apps.
+                Built my first e-commerce store and made my first online sales at 12 years old. Later built online marketplaces and experimental web apps.
               </p>
             </div>
           </article>
@@ -202,7 +231,7 @@
     <section id="experience" class="section border-top">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">03 / Work</span>
+          <span class="section-label">03 / Experience</span>
           <h2 class="section-title">Work Experience</h2>
         </div>
 
@@ -217,7 +246,7 @@
               <h3 class="timeline-role">Student Assistant</h3>
               <div class="timeline-company">Keylane · Copenhagen</div>
               <p class="timeline-desc">
-                Primarily testing pension SaaS solutions before they get released to customers.
+                Primarily testing pension SaaS solutions before being released to customers.
               </p>
             </div>
           </div>
@@ -231,7 +260,7 @@
               <h3 class="timeline-role">Sales Associate</h3>
               <div class="timeline-company">Skechers · Ringsted</div>
               <p class="timeline-desc">
-                Worked retail, helping customers and handling daily store operations.
+                Worked retail at Skechers.
               </p>
             </div>
           </div>
@@ -245,7 +274,7 @@
               <h3 class="timeline-role">Cafe Worker</h3>
               <div class="timeline-company">TMS Foodservice ApS · Ringsted Sports Arena</div>
               <p class="timeline-desc">
-                Worked in a cafe at a sports venue, occasionally also preparing and serving meals for the team afterward.
+                Worked in a cafe at a sports venue, occasionally also preparing and serving the team afterward.
               </p>
             </div>
           </div>
@@ -273,7 +302,7 @@
               <h3 class="timeline-role">Newspaper Carrier</h3>
               <div class="timeline-company">Sjællandske Nyheder · Ringsted</div>
               <p class="timeline-desc">
-                Delivered newspapers for Dagbladet—strictly papers, no commercial flyers!
+                Delivered newspapers for Dagbladet, no commercials.
               </p>
             </div>
           </div>
@@ -328,49 +357,13 @@
       </div>
     </section>
 
-    <!-- Fitness & Podcasts Section -->
-    <section id="interests" class="section border-top">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">05 / Personal</span>
-          <h2 class="section-title">Fitness &amp; Podcasts</h2>
-        </div>
-
-        <div class="interests-grid">
-          
-          <div class="interest-card">
-            <h3 class="interest-title">Fitness &amp; Half Ironman Prep</h3>
-            <p class="interest-desc">
-              Working out is a huge part of my life. I’ve done strength training for years, but recently I’ve been favoring calisthenics a lot more. 
-              Right now, I’m also training to complete a Half Ironman!
-            </p>
-          </div>
-
-          <div class="interest-card">
-            <h3 class="interest-title">Podcasts I Listen To</h3>
-            <p class="interest-desc">
-              I’m always listening to business, tech, and mindset shows. Here are my favorites:
-            </p>
-            <ul class="podcasts-list">
-              <li><strong>My First Million</strong> <span class="sub-text">(listen to this religiously!)</span></li>
-              <li><strong>Starter Story</strong></li>
-              <li><strong>The Prof G Pod</strong></li>
-              <li><strong>TBPN</strong></li>
-              <li><strong>Langt fra løgnen</strong></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- Documents & Downloads Section -->
     <section id="documents" class="section border-top">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">06 / Credentials</span>
+          <span class="section-label">05 / Credentials</span>
           <h2 class="section-title">Resume &amp; Documents</h2>
-          <p class="section-subtitle">Links to my resume, high school diploma/grades, and school recommendation.</p>
+          <p class="section-subtitle">Direct links to resume, graduation certificate, and school recommendation.</p>
         </div>
 
         <div class="documents-grid">
@@ -422,17 +415,17 @@
     </section>
 
     <!-- Reading / Goodreads Section -->
-    <section id="reading" class="section border-top">
+    <section id="goodreads" class="section border-top">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">07 / Reading</span>
+          <span class="section-label">06 / Reading</span>
           <h2 class="section-title">Goodreads</h2>
         </div>
         <div class="reading-box">
           <div class="reading-content">
             <h3 class="reading-heading">Books I'm Reading</h3>
             <p>
-              I read non-fiction, business, and tech books. You can check out what I’m reading or what’s on my shelf on Goodreads.
+              I track non-fiction, business, and technology books on Goodreads.
             </p>
           </div>
           <a href="https://www.goodreads.com/user/show/187168328-tobias-petersen" target="_blank" rel="noopener" class="btn btn-secondary">
@@ -449,9 +442,10 @@
     <div class="container footer-container">
       <div class="footer-left">
         <span class="footer-brand">Tobias Petersen</span>
-        <span class="footer-sub">Building projects &amp; learning every day</span>
+        <span class="footer-sub">Building apps, working out, and exploring ideas.</span>
       </div>
       <div class="footer-right">
+        <a href="blog.html">Blog</a>
         <a href="mailto:tobiaspetersen28@outlook.dk">tobiaspetersen28@outlook.dk</a>
         <a href="tel:+4571700828">+45 71 70 08 28</a>
         <a href="https://www.linkedin.com/in/tap2005/" target="_blank" rel="noopener">LinkedIn</a>
