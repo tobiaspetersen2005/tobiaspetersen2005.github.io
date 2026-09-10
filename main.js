@@ -52,16 +52,16 @@ function setupScrollspy() {
   sections.forEach(section => observer.observe(section));
 }
 
-// Document Modal Preview Configuration (Mapped to your exact uploaded files)
+// Document Modal Preview Configuration (Mapped to exact PDF paths)
 const documentMap = {
   'resume': {
     title: 'Curriculum Vitae (Resume)',
-    file: 'documents/CV Engelsk.pdf',
+    file: 'documents/CV%20Engelsk.pdf',
     downloadName: 'CV_Engelsk_Tobias_Petersen.pdf'
   },
   'graduation-certificate': {
     title: 'ZBC Graduation Certificate & Grades',
-    file: 'documents/Karakterer ZBC.pdf',
+    file: 'documents/Karakterer%20ZBC.pdf',
     downloadName: 'Karakterer_ZBC_Tobias_Petersen.pdf'
   },
   'school-recommendation': {
@@ -76,6 +76,7 @@ function openDocumentModal(docKey) {
   const modalTitle = document.getElementById('modal-title');
   const modalViewer = document.getElementById('modal-viewer');
   const downloadBtn = document.getElementById('modal-download-btn');
+  const openTabBtn = document.getElementById('modal-open-tab-btn');
 
   const doc = documentMap[docKey];
 
@@ -85,8 +86,20 @@ function openDocumentModal(docKey) {
   downloadBtn.href = doc.file;
   downloadBtn.setAttribute('download', doc.downloadName);
 
-  // Directly insert clean PDF iframe preview
-  modalViewer.innerHTML = `<iframe src="${encodeURI(doc.file)}" title="${doc.title}"></iframe>`;
+  if (openTabBtn) {
+    openTabBtn.href = doc.file;
+  }
+
+  // Embed PDF cleanly with fallback
+  modalViewer.innerHTML = `
+    <object data="${doc.file}" type="application/pdf" width="100%" height="480px">
+      <embed src="${doc.file}" type="application/pdf" width="100%" height="480px" />
+      <div style="text-align: center; padding: 40px 16px;">
+        <p style="font-size: 1rem; margin-bottom: 12px;">PDF preview not supported directly in this browser frame.</p>
+        <a href="${doc.file}" target="_blank" class="btn btn-primary btn-sm">Open PDF in New Tab &nearr;</a>
+      </div>
+    </object>
+  `;
 
   modal.classList.add('active');
   modal.setAttribute('aria-hidden', 'false');
