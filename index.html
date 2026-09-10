@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tobias Petersen — Actuarial Mathematics & Software</title>
+  <meta name="description" content="Personal website of Tobias Petersen, Actuarial Mathematics student at University of Copenhagen and Student Assistant at Keylane.">
+  
+  <!-- Google Fonts: Inter for clean readable body/UI, Newsreader for editorial serif titles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="site-logo">Tobias Petersen</a>
+      
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Entrepreneurship &amp; Projects</a>
+        <a href="#documents">Documents</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a href="mailto:tobiaspetersen28@outlook.dk" class="btn btn-primary btn-sm">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            Actuarial Mathematics @ UCPH · Student Assistant @ Keylane
+          </div>
+          <h1 class="hero-title">Tobias Petersen</h1>
+          <p class="hero-subtitle">
+            Actuarial Mathematics student at <strong>University of Copenhagen</strong> and Student Assistant at <strong>Keylane</strong>. 
+            Focused on probability theory, quantitative finance, software systems, and entrepreneurial initiatives.
+          </p>
+
+          <div class="hero-links">
+            <a href="https://www.linkedin.com/in/tap2005/" target="_blank" rel="noopener" class="link-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.goodreads.com/user/show/187168328-tobias-petersen" target="_blank" rel="noopener" class="link-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <span>Goodreads</span>
+            </a>
+            <a href="mailto:tobiaspetersen28@outlook.dk" class="link-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>tobiaspetersen28@outlook.dk</span>
+            </a>
+            <a href="tel:+4571700828" class="link-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+45 71 70 08 28</span>
+            </a>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#documents" class="btn btn-primary">View Credentials &amp; Resume</a>
+            <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section border-top">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">01 / Overview</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="lead">
+              I am an Actuarial Mathematics student at the University of Copenhagen (Københavns Universitet) and a Student Assistant at Keylane.
+            </p>
+            <p>
+              My academic interests lie at the intersection of probability theory, financial mathematics, statistical computing, and stochastic modeling. Professionally, I work with software solutions for the life insurance and pension domain.
+            </p>
+            <p>
+              Beyond quantitative studies, I have an entrepreneurial mindset focused on building practical products, digital tools, and commercial ventures.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-label">Current Role</span>
+              <span class="highlight-value">Student Assistant @ Keylane</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Education</span>
+              <span class="highlight-value">B.Sc. Actuarial Mathematics (UCPH)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Location</span>
+              <span class="highlight-value">Copenhagen, Denmark</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Focus Areas</span>
+              <span class="highlight-value">Actuarial Science, FinTech, Ventures</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section border-top">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">02 / Career</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jan 2026 — Present</span>
+              <span class="timeline-type">Part-time</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Student Assistant</h3>
+              <div class="timeline-company">Keylane · Copenhagen, Denmark</div>
+              <p class="timeline-desc">
+                Developing and supporting software solutions for the life insurance and pension industry. Working with quantitative logic, financial calculations, and data processing.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jan 2025 — Present</span>
+              <span class="timeline-type">Part-time</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Sales Associate</h3>
+              <div class="timeline-company">Skechers · Ringsted, Denmark</div>
+              <p class="timeline-desc">
+                Customer advisory, inventory management, point-of-sale logistics, and daily retail operations.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Oct 2023 — Apr 2024</span>
+              <span class="timeline-type">Part-time</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Cafe Medarbejder</h3>
+              <div class="timeline-company">TMS Foodservice ApS · Ringsted Sports Arena</div>
+              <p class="timeline-desc">
+                High-volume food service, customer service, and event logistics during sporting events.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jul 2021 — Jan 2023</span>
+              <span class="timeline-type">Part-time</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Ungarbejder</h3>
+              <div class="timeline-company">Lidl Danmark · Ringsted, Denmark</div>
+              <p class="timeline-desc">
+                Store inventory maintenance, checkout operations, customer service, and logistics support.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Aug 2018 — Nov 2020</span>
+              <span class="timeline-type">Part-time</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Avisuddeler</h3>
+              <div class="timeline-company">Sjællandske Nyheder · Ringsted, Denmark</div>
+              <p class="timeline-desc">
+                Reliable distribution of newspapers and weekly commercial press.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section border-top">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">03 / Academics</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="education-grid">
+          
+          <div class="edu-card">
+            <div class="edu-header">
+              <div class="edu-institution">Københavns Universitet (University of Copenhagen)</div>
+              <span class="edu-date">Aug 2024 — Jun 2027</span>
+            </div>
+            <h3 class="edu-degree">Bachelor’s Degree in Actuarial Mathematics (Forsikringsmatematik)</h3>
+            <p class="edu-desc">
+              Focusing on probability theory, measure theory, statistics, stochastic processes, financial mathematics, and risk theory.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-header">
+              <div class="edu-institution">ZBC - Zealand Business College</div>
+              <span class="edu-date">Aug 2021 — Jun 2024</span>
+            </div>
+            <h3 class="edu-degree">HHX (Higher Commercial Examination Programme)</h3>
+            <p class="edu-desc">
+              Specialized secondary degree in economics, business administration, mathematics, and commercial law.
+            </p>
+            <div class="edu-attachments">
+              <button onclick="openDocumentModal('graduation-certificate')" class="doc-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <span>Graduation Certificate &amp; Grades</span>
+              </button>
+              <button onclick="openDocumentModal('school-recommendation')" class="doc-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <span>School Recommendation</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Entrepreneurship & Projects Section -->
+    <section id="projects" class="section border-top">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">04 / Ventures &amp; Code</span>
+          <h2 class="section-title">Entrepreneurship &amp; Projects</h2>
+        </div>
+
+        <div class="projects-list">
+          
+          <article class="project-row">
+            <div class="project-meta">
+              <span class="project-tag">Entrepreneurship</span>
+              <span class="project-year">Venture</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Commercial Initiatives &amp; Business Building</h3>
+              <p class="project-desc">
+                Initiated and developed independent business projects, focusing on digital product development, unit economics, market validation, and customer execution.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-meta">
+              <span class="project-tag">Quantitative / Math</span>
+              <span class="project-year">Academic &amp; Applied</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Actuarial Modeling &amp; Risk Computation</h3>
+              <p class="project-desc">
+                Mathematical modeling projects applying stochastic calculus, mortality rate projections, interest rate models, and risk analysis in Python and R.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-meta">
+              <span class="project-tag">Software Engineering</span>
+              <span class="project-year">Web &amp; Systems</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Digital Systems &amp; Web Applications</h3>
+              <p class="project-desc">
+                Custom web solutions engineered for high performance, typography-driven clarity, clean API integrations, and robust user interface architecture.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Documents & Downloads Section -->
+    <section id="documents" class="section border-top">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">05 / Credentials</span>
+          <h2 class="section-title">Resume &amp; Documents</h2>
+          <p class="section-subtitle">Direct links to curriculum vitae, graduation transcript, and academic recommendation.</p>
+        </div>
+
+        <div class="documents-grid">
+          
+          <div class="document-item">
+            <div class="doc-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div class="doc-info">
+              <h3 class="doc-title">Curriculum Vitae (Resume)</h3>
+              <p class="doc-meta">PDF Document · Updated 2026</p>
+            </div>
+            <div class="doc-actions">
+              <button onclick="openDocumentModal('resume')" class="btn btn-secondary btn-sm">Preview</button>
+              <a href="documents/resume.pdf" download class="btn btn-outline btn-sm">Download</a>
+            </div>
+          </div>
+
+          <div class="document-item">
+            <div class="doc-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="doc-info">
+              <h3 class="doc-title">Graduation Certificate &amp; Grades</h3>
+              <p class="doc-meta">Official ZBC HHX Diploma &amp; Transcript · PDF</p>
+            </div>
+            <div class="doc-actions">
+              <button onclick="openDocumentModal('graduation-certificate')" class="btn btn-secondary btn-sm">Preview</button>
+              <a href="documents/graduation-certificate.pdf" download class="btn btn-outline btn-sm">Download</a>
+            </div>
+          </div>
+
+          <div class="document-item">
+            <div class="doc-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <div class="doc-info">
+              <h3 class="doc-title">School Recommendation</h3>
+              <p class="doc-meta">Letter of Recommendation · ZBC College · PDF</p>
+            </div>
+            <div class="doc-actions">
+              <button onclick="openDocumentModal('school-recommendation')" class="btn btn-secondary btn-sm">Preview</button>
+              <a href="documents/recommendation.pdf" download class="btn btn-outline btn-sm">Download</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading / Goodreads Section -->
+    <section id="reading" class="section border-top">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">06 / Personal</span>
+          <h2 class="section-title">Reading List</h2>
+        </div>
+        <div class="reading-box">
+          <div class="reading-content">
+            <h3 class="reading-heading">Goodreads &amp; Book Reviews</h3>
+            <p>
+              I track my readings in economics, actuarial science, technology, leadership, and non-fiction on Goodreads.
+            </p>
+          </div>
+          <a href="https://www.goodreads.com/user/show/187168328-tobias-petersen" target="_blank" rel="noopener" class="btn btn-secondary">
+            View Goodreads Profile &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer border-top">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Tobias Petersen</span>
+        <span class="footer-sub">Actuarial Mathematics @ UCPH · Student Assistant @ Keylane</span>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:tobiaspetersen28@outlook.dk">tobiaspetersen28@outlook.dk</a>
+        <a href="tel:+4571700828">+45 71 70 08 28</a>
+        <a href="https://www.linkedin.com/in/tap2005/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.goodreads.com/user/show/187168328-tobias-petersen" target="_blank" rel="noopener">Goodreads</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Document Preview Modal -->
+  <div id="document-modal" class="modal" aria-hidden="true">
+    <div class="modal-overlay" onclick="closeDocumentModal()"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Document Preview</h3>
+        <button onclick="closeDocumentModal()" class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="modal-viewer" class="modal-viewer">
+          <!-- Dynamically populated iframe or preview message -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a id="modal-download-btn" href="#" download class="btn btn-primary btn-sm">Download PDF</a>
+        <button onclick="closeDocumentModal()" class="btn btn-secondary btn-sm">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
